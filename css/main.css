@@ -1,0 +1,202 @@
+:root {
+    --mc: #233B5F;
+    --sc: #C03E23;
+    --bc: #F8F8EE;
+}
+
+.Wrap {
+    width: 100%;
+    min-width: 1900px;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.sc_tit {
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--mc);
+    letter-spacing: 0.05em;
+}
+
+.sc_info h3 {
+    font-size: 37px;
+    font-weight: 500;
+    color: var(--mc);
+}
+
+.sc_info p {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--mc);
+}
+
+
+/* 팝업창 */
+.popup {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+}
+
+.popup .pop_case {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup .pop_inner {
+    width: 520px;
+    height: 560px;
+    padding: 40px 20px 50px 20px;
+    background: #fff;
+}
+
+.popup .pop_con img {
+    width: 500px;
+    border: 3px solid #333;
+    /* height: 700px; */
+}
+
+.popup .pop_close {
+   color: #333;
+   font-size: 13px;
+   font-weight: 500;
+   margin-top: 13px;
+}
+
+.popup .pop_close button {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* 헤더 */
+.Header .line {
+    height: 15px;
+    background-color: var(--mc);
+}
+
+.Header .container {
+    display: flex;
+    width: 1700px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--mc);
+}
+
+.Header .Gnb {
+    display: flex;
+    gap: 50px;
+}
+
+.Header .Gnb li>a {
+    display: inline-block;
+}
+
+.Header .Logo img {
+    width: 100px;
+    height: 114px;
+}
+
+.Header  .H_right {
+    display: flex;
+    gap: 50px; 
+}
+
+.Header .H_right li>a {
+    display: inline-block;
+}
+
+
+/* 메인 */
+.Main .Main_Visual {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.Main .Main_Visual figure{
+    width: 1920px;
+    height: calc(100vh - 169px);
+}
+
+
+/* Main_Visual act */
+.Main_Visual .Main_act {
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Main_Visual .Main_act .wheel{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.Main_act .wheel i {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    color: #fff;
+    animation: wheel 2s infinite;
+    z-index: 999;
+}
+
+@keyframes wheel {
+    to {
+        top: 20px;
+    }
+}
+
+.Main_Visual .Main_act {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: 300;
+    white-space: nowrap;
+    justify-content: center;
+    color: #fff;
+    z-index: 999;
+}
+
+/* Section01 */
+.Section01 { padding: 100px 0;}
+
+.Section01 .sc_tit {
+    position: relative;
+}
+.Section01 .sc_tit h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 25px;   
+    color: var(--mc);
+}
