@@ -30,6 +30,7 @@
 .sc_info p {
     font-size: 21px;
     font-weight: 600;
+    line-height: 36px;
     color: var(--mc);
 }
 
@@ -178,25 +179,82 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 15px;
-    font-weight: 300;
+    /* font-weight: 300;
     white-space: nowrap;
-    justify-content: center;
+    justify-content: center; */
     color: #fff;
     z-index: 999;
 }
 
 /* Section01 */
-.Section01 { padding: 100px 0;}
+.Section01 { padding: 100px 0 150px 0;}
 
 .Section01 .sc_tit {
     position: relative;
+    display: inline-block;
 }
-.Section01 .sc_tit h2::before {
+
+.Section01 .sc_tit h2 {
+    padding: 0 300px 25px 0;
+    border-bottom: 5px solid var(--mc);
+}
+
+.Section01 .sc_tit figure { margin: 25px 0 100px 0; }
+.Section01 .sc_tit img {
+    vertical-align: top;
+    width: 250px;
+    height: 51px;
+}
+
+/* .Section01 .sc_tit h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 450px;
+    height: 0;
+    border-top: 3px solid var(--mc);
+    시간없어서 그냥 패딩으로 악세사리 만듬 수정할것.
+} */
+
+
+.Section01 .sc_info { position: relative; }
+.Section01 .sc_info h3 { margin-left: 74px; padding-bottom: 60px;}
+.Section01 .sc_info h3::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 50px;
-    height: 25px;   
+    width: 37px;
+    height: 37px;
+    background: var(--mc);
+}
+
+
+/* Section02 커피클럽 배너*/
+.Section02 {
+    margin-top: 100px;
+    padding: 50px 0;
+    height: 300px;
+    background-color: var(--bc);
+}
+
+.Section02 .inner { 
+    display: flex;
+    align-items: center;
+}
+
+.Section02 img {
+    width: 662px;
+    height: 195px;
+}
+
+.Section02 .sc_banner {
+    margin: 0 auto;
+    text-align: center;
+
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
     color: var(--mc);
 }
