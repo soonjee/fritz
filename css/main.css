@@ -258,3 +258,30 @@
     line-height: 30px;
     color: var(--mc);
 }
+
+.Section02 .sc_banner>p {
+    margin-bottom: 20px;
+}
+
+.Section02 .sc_go {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 2px solid var(--mc);
+}
+
+.Section02 .sc_go:hover {
+    background-color: var(--mc);
+    color: var(--bc);
+    transition: 0.3s;
+}
+
+.Section02 .sc_go a {
+    display: inline-block;
+    font-size: 21px;
+}
+
+
+/* .Section02 .sc_go img{
+    width: 51px;
+    height: 5px;   
+} */

@@ -1,11 +1,14 @@
 $(function () {
-    $('.Main_slider').slick({
 
+    // 메인 비주얼 슬릭
+    $('.Main_slider').slick({
         autoplay: true,
         dots: false,
         arrows: false,
     })
 
+
+    // 섹션01 커피클럽 스와이프
     var swiper = new Swiper(".mySwiper", {
         loop: false,
         spaceBetween: 10,
