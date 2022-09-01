@@ -2,6 +2,7 @@
     --mc: #233B5F;
     --sc: #C03E23;
     --bc: #F8F8EE;
+    --wc: #fff;
 }
 
 .Wrap {
@@ -287,7 +288,7 @@
 } */
 
 /* Section03 캡슐 하우스커피 */
-.Section03 { padding: 100px 0 150px 0;}
+.Section03 { padding: 100px 0 150px 0; }
 .Section03 .sc_tit {
     position: relative;
     text-align: right;
@@ -304,7 +305,6 @@
 .Section03 .sc_tit figure { margin: 25px 0 100px 0; }
 .Section03 .sc_tit img {
     vertical-align: top;
-    width: 250px;
     height: 51px;
 }
 
@@ -324,4 +324,79 @@
     width: 37px;
     height: 37px;
     background: var(--sc);
+}
+
+.Section03 .house_ct {
+    display: flex;
+    justify-content: space-between;
+}
+.Section03 .house_ct .House_slider{
+    max-width: 689px;
+    width: 100%;
+    max-height: 689px;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+.Section03 .house_info {
+    max-width: 689px;
+    width: 100%;
+    max-height: 689px;
+    height: 100%;
+    padding: 100px 110px;
+    text-align: center;
+    border: 6px solid var(--sc);
+}
+
+.Section03 .house_info figure {
+    width: 480px;
+    height: 125px;
+    margin-bottom: 60px;
+}
+
+.Section03 .house_info p {
+    font-size: 29px;
+    font-weight: 500;
+    color: var(--sc);
+    line-height: 56px;
+    margin-bottom: 60px;
+}
+
+.Section03 .sc_go {
+    display: inline-block;
+    padding: 30px 82px;
+    font-size: 500;
+    border: 3px solid var(--sc);
+    background: var(--sc);
+    color: var(--wc);
+}
+
+.Section03 .sc_go:hover {
+    background: var(--fc);
+    color: var(--sc);
+    transition: 0.3s;
+}
+
+.Section03 .sc_go a {
+    display: inline-block;
+    font-size: 21px;
+}
+
+.Section03 .house_pd { display: flex;}
+.Section03 .house_pd figure { text-align: center;}
+.Section03 .house_pd img {
+    width: 363px;
+    height: 283px;
+}
+
+.Section03 .house_pd .pd_tit {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--mc);
+    margin-bottom: 12px;
+}
+.Section03 .house_pd .pd_pr {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mc);
 }

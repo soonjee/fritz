@@ -29,6 +29,16 @@ $(function () {
     });
 
 
+    //section03 하우스커피 슬라이드
+    $('.House_slider').slick({
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        fade: true,
+        speed: 1000,
+    })
+
+
 
 
     // 팝업창 쿠키
