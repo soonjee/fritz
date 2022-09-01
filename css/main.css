@@ -285,3 +285,43 @@
     width: 51px;
     height: 5px;   
 } */
+
+/* Section03 캡슐 하우스커피 */
+.Section03 { padding: 100px 0 150px 0;}
+.Section03 .sc_tit {
+    position: relative;
+    text-align: right;
+    justify-content: flex-end;
+    color: var(--sc);
+}
+
+.Section03 .sc_tit h2 {
+    display: inline-block;
+    padding: 0 0 25px 100px;
+    border-bottom: 5px solid var(--sc);
+}
+
+.Section03 .sc_tit figure { margin: 25px 0 100px 0; }
+.Section03 .sc_tit img {
+    vertical-align: top;
+    width: 250px;
+    height: 51px;
+}
+
+.Section03 .sc_info h3 {
+    font-size: 37px;
+    font-weight: 500;
+    color: var(--sc);
+}
+
+.Section03 .sc_info { position: relative; }
+.Section03 .sc_info h3 { margin-left: 74px; padding-bottom: 60px;}
+.Section03 .sc_info h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    background: var(--sc);
+}
