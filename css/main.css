@@ -120,10 +120,10 @@
 
 .Header .Gnb>ul>li ul {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 50%;
     width: 170px;
-    /* padding: 25px 0; */
+    padding: 10px 0 0 0;
     visibility: hidden;
     line-height: 50px;
     transform: translateX(-50%);
@@ -140,7 +140,7 @@
 }
 
 .Header .Gnb>ul>li:hover ul {
-    top: 25px;
+    top: 28px;
     left: 50%;
     opacity: 1;
     visibility: visible;
