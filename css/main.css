@@ -23,16 +23,18 @@
 }
 
 .sc_info h3 {
-    font-size: 37px;
+    font-size: 31px;
     font-weight: 500;
     color: var(--mc);
 }
 
 .sc_info p {
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 36px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.028em;
     color: var(--mc);
+    margin-bottom: 11px;
 }
 
 
@@ -108,28 +110,51 @@
     font-size: 23px;
     font-weight: 600;
 }
+.Header .Gnb ul>li>a:hover {
+    color: var(--sc);
+}
 
 .Header .Gnb>ul>li { position: relative; }
 .Header .Gnb>ul>li a { display: block; }
-.Header .Gnb>ul ul {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    z-index: 999;
-    width: 180px;
-    line-height: 60px;
-    transform: translateX(-50%);
-    text-align: center;
+/* .Header .smenu a:hover { display: inline-block; border-bottom: 1px solid var(--sc); } */
 
+.Header .Gnb>ul>li ul {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 170px;
+    /* padding: 25px 0; */
+    visibility: hidden;
+    line-height: 50px;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    text-align: center;
     color: var(--mc);
     background: var(--wc);
     font-size: 15px;
     font-weight: 500;
+    /* transition: 1s; */
+    /* opacity: 0; */
+    z-index: 999;
 }
+
 .Header .Gnb>ul>li:hover ul {
-    display: block;
+    top: 25px;
+    left: 50%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
 }
+/* nav > ul > li > a:hover+.smenu{
+    display: block;
+} */
+.Header .Gnb>ul li ul li {
+    display: block;
+    border-bottom: 1px solid var(--mc);
+}
+
+
 
 .Header .Logo img {
     width: 100px;
@@ -143,6 +168,10 @@
 
 .Header .H_right li>a {
     display: inline-block;
+}
+
+.Header .H_right li>a:hover {
+    color: var(--sc);
 }
 
 
@@ -246,10 +275,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 37px;
-    height: 37px;
+    width: 31px;
+    height: 31px;
     background: var(--mc);
 }
+
 
 
 /* Section02 커피클럽 배너*/
@@ -275,8 +305,8 @@
     text-align: center;
 
     font-size: 21px;
-    font-weight: 600;
-    line-height: 30px;
+    font-weight: 500;
+    line-height: 29px;
     color: var(--mc);
 }
 
@@ -286,7 +316,7 @@
 
 .Section02 .sc_go {
     display: inline-block;
-    padding: 12px 35px;
+    padding: 10px 40px;
     border: 2px solid var(--mc);
 }
 
@@ -296,9 +326,10 @@
     transition: 0.3s;
 }
 
-.Section02 .sc_go a {
+.Section02 .sc_go p{
     display: inline-block;
-    font-size: 21px;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 
@@ -329,7 +360,7 @@
 }
 
 .Section03 .sc_info h3 {
-    font-size: 37px;
+    font-size: 31px;
     font-weight: 500;
     color: var(--sc);
 }
@@ -341,8 +372,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 37px;
-    height: 37px;
+    width: 31px;
+    height: 31px;
     background: var(--sc);
 }
 
@@ -378,13 +409,13 @@
     font-size: 29px;
     font-weight: 500;
     color: var(--sc);
-    line-height: 56px;
-    margin-bottom: 60px;
+    line-height: 45px;
+    margin-bottom: 91px;
 }
 
 .Section03 .sc_go {
     display: inline-block;
-    padding: 30px 82px;
+    padding: 20px 82px;
     font-size: 500;
     border: 3px solid var(--sc);
     background: var(--sc);
@@ -438,4 +469,45 @@
     font-size: 13px;
     font-weight: 400;
     color: var(--mc);
+}
+
+.Footer {
+    padding: 50px 0;
+    background: var(--mc);
+    color: var(--wc);
+}
+
+.Footer .inner {
+    display: flex;
+    text-align: center;
+}
+
+.Footer .F_logo {
+    margin-right: 50px;
+}
+
+.Footer .Address { width: 700px; text-align: left; }
+.Footer .Privacy a { display: inline-block; }
+.Footer .Address .Privacy {
+    font-size: 15px;
+    font-weight: 500;
+    color:var(--pc);
+    margin-bottom: 30px;
+}
+
+.Footer .Addr {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.Footer .Addr ul>li{ display: inline-block; }
+.Footer .Addr ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 10px;
 }
