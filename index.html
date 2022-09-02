@@ -22,7 +22,7 @@
 <body>
     <div class="Wrap">
         <!-- 팝업창 -->
-        <div class="popup">
+        <!-- <div class="popup">
             <div class="pop_case">
                 <div class="pop_inner">
                     <div class="pop_con">
@@ -35,26 +35,45 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- 헤더 -->
         <header class="Header">
             <div class="line"></div>
             <div class="container">
-                <ul class="Gnb">
-                    <li>
-                        <a href="">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="">COFFEE CLUB</a>
-                    </li>
-                    <li>
-                        <a href="">WHOLESALE</a>
-                    </li>
-                    <li>
-                        <a href="">EDUCATION</a>
-                    </li>
-                </ul>
+                <nav class="Gnb">
+                    <ul>
+                        <li>
+                            <a href="">SHOP</a>
+                            <ul class="smenu">
+                                <li><a href="">COFFEE</a></li>
+                                <li><a href="">GOODS</a></li>
+                                <li><a href="">GIFTS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu" href="">COFFEE CLUB</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="">WHOLESALE</a>
+                            <ul class="smenu">
+                                <li><a href="">SHOP</a></li>
+                                <li><a href="">ABOUT BLEND</a></li>
+                                <li><a href="">SAMPLEㅣ샘플신청</a></li>
+                                <li><a href="">NOTICE / Q&A</a></li>
+                                <li><a href="">HELP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu" href="">EDUCATION</a>
+                            <ul class="smenu">
+                                <li><a href=""> 커핑 클래스</a></li>
+                                <li><a href="">수업내용</a></li>
+                                <li><a href="">신청방법</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <h1 class="Logo">
                     <a href="#!">
                         <img src="./assets/logo_01.png" alt="">
@@ -118,10 +137,10 @@
                     </div>
                     <div class="sc_info">
                         <h3>COFFEE CLUB</h3>
-                        <p>커피클럽은 어디서든 간편하게 프릳츠 커피를 <br/>
+                        <p>커피클럽은 어디서든 간편하게 프릳츠 커피를 <br />
                             즐기실 수 있도록정기 배송해드리는 프로그램입니다.
                         </p>
-                        <br/>
+                        <br />
                         <p>COFFEE SUBSCRIPTION PROGRAM AT YOUR SERVICE.</p>
                     </div>
                     <div class="Club_slider">
@@ -180,7 +199,7 @@
                     </figure>
                     <div class="sc_banner">
                         <p>
-                            플릳츠가 직접 골라 소개하는 <br/>
+                            플릳츠가 직접 골라 소개하는 <br />
                             다양한 커피들을 정기 배송 서비스로 즐겨보세요!
                         </p>
                         <div class="sc_go">
@@ -223,8 +242,8 @@
                                 <img src="./assets/section03_pd.png" alt="">
                             </figure>
                             <p>
-                                간편함과 퀄리티를 동시에! <br/>
-                                프릳츠에서 만드는 간편 커피 시리즈 <br/>
+                                간편함과 퀄리티를 동시에! <br />
+                                프릳츠에서 만드는 간편 커피 시리즈 <br />
                                 편리한데 맛까지 훌륭합니다.
                             </p>
                             <div class="sc_go">
@@ -233,28 +252,53 @@
                         </div>
                     </div>
                     <div class="house_pd">
-                        <figure>
-                            <img src="./assets/coffee01.png" alt="">
-                            <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
-                            <p class="pd_pr">KRW 9,500</p>
-                        </figure>
-                        <figure>
-                            <img src="./assets/coffee04.png" alt="">
-                            <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
-                            <p class="pd_pr">KRW 9,500</p>
-                        </figure>
-                        <figure>
-                            <img src="./assets/coffee05.png" alt="">
-                            <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
-                            <p class="pd_pr">KRW 9,500</p>
-                        </figure>
+                        <div class="house_pd_top">
+                            <figure>
+                                <img src="./assets/cf01.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_01.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf02.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_02.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf03.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_03.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                        </div>
+                        <div class="house_pd_btm">
+                            <figure>
+                                <img src="./assets/cf04.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_04.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf05.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_05.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf06.png" alt="">
+                                <!-- <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p> -->
+                            </figure>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </main>
-        <footer class="Footer">
 
-        </footer>
+                </div>
+    </div>
+    </main>
+    <footer class="Footer">
+
+    </footer>
     </div>
 
 

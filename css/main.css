@@ -102,13 +102,33 @@
     color: var(--mc);
 }
 
-.Header .Gnb {
+.Header .Gnb>ul {
     display: flex;
     gap: 50px;
+    font-size: 23px;
+    font-weight: 600;
 }
 
-.Header .Gnb li>a {
-    display: inline-block;
+.Header .Gnb>ul>li { position: relative; }
+.Header .Gnb>ul>li a { display: block; }
+.Header .Gnb>ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    z-index: 999;
+    width: 180px;
+    line-height: 60px;
+    transform: translateX(-50%);
+    text-align: center;
+
+    color: var(--mc);
+    background: var(--wc);
+    font-size: 15px;
+    font-weight: 500;
+}
+.Header .Gnb>ul>li:hover ul {
+    display: block;
 }
 
 .Header .Logo img {
@@ -382,21 +402,40 @@
     font-size: 21px;
 }
 
-.Section03 .house_pd { display: flex;}
-.Section03 .house_pd figure { text-align: center;}
-.Section03 .house_pd img {
-    width: 363px;
-    height: 283px;
+.Section03 .house_pd_top { display: flex; justify-content: space-between; margin-bottom: 30px;}
+.Section03 .house_pd img { max-width: 100%; margin-bottom: 20px; }
+.Section03 .house_pd figure {
+    position: relative;
+    width: 436px;
+    /* margin: 0 auto; */
+    text-align: center;
 }
 
-.Section03 .house_pd .pd_tit {
-    font-size: 19px;
+.Section03 .house_pd .pd_b {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.Section03 figure:hover .pd_b {
+    opacity: 1;
+}
+
+.Section03 .pd_b {
+    display: block;
+}
+
+.Section03 .house_pd_btm { display: flex; justify-content: space-between;  margin-bottom: 30px;}
+.Section03 .pd_tit {
+    font-size: 15px;
     font-weight: 400;
     color: var(--mc);
     margin-bottom: 12px;
 }
-.Section03 .house_pd .pd_pr {
-    font-size: 15px;
+.Section03 .pd_pr {
+    font-size: 13px;
     font-weight: 400;
     color: var(--mc);
 }
